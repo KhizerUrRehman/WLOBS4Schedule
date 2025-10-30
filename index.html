@@ -702,5 +702,60 @@
             </div>
         </div>
     </div>
+    <script>
+        const teamFilter = document.getElementById('teamFilter');
+        const hideCompletedCheckbox = document.getElementById('hideCompleted');
+        const games = document.querySelectorAll('.game');
+    
+        function updateGameVisibility() {
+            const selectedTeam = teamFilter.value.toLowerCase();
+            const hideCompleted = hideCompletedCheckbox.checked;
+            const now = new Date();
+    
+            games.forEach(game => {
+                const daySection = game.closest('.day-section');
+                const dateText = daySection.querySelector('.day-date').textContent.trim();
+                const timeText = game.querySelector('.game-time').textContent.trim();
+                const dateTime = new Date(`${dateText} ${timeText}`);
+    
+                const teams = Array.from(game.querySelectorAll('.team')).map(t => t.textContent.toLowerCase());
+    
+                let visible = true;
+    
+                // Filter by team
+                if (selectedTeam !== 'all' && !teams.includes(selectedTeam)) {
+                    visible = false;
+                }
+    
+                // Filter by completion
+                
+                if (hideCompleted && dateTime.setUTCHours(dateTime.getUTCHours()+2) < now) {
+                    visible = false;
+                }
+                
+    
+                game.style.display = visible ? '' : 'none';
+            });
+    
+            // Hide empty day sections
+            const daySections = document.querySelectorAll('.day-section');
+            daySections.forEach(daySection => {
+                const visibleGames = daySection.querySelectorAll('.game:not([style*="display: none"])');
+                daySection.style.display = visibleGames.length ? '' : 'none';
+            });
+    
+            // Hide empty week sections
+            const weekSections = document.querySelectorAll('.week-section');
+            weekSections.forEach(weekSection => {
+                const visibleDays = weekSection.querySelectorAll('.day-section:not([style*="display: none"])');
+                weekSection.style.display = visibleDays.length ? '' : 'none';
+            });
+        }
+    
+        teamFilter.addEventListener('change', updateGameVisibility);
+        hideCompletedCheckbox.addEventListener('change', updateGameVisibility);
+    </script>
+    
 </body>
+
 </html>
