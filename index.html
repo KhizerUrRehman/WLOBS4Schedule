@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WLOB Season 4 - Schedule</title>
+    <title>WLOB Season 5 - Schedule</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
         
@@ -102,28 +102,6 @@
             align-items: center;
             justify-content: center;
             gap: 1rem;
-        }
-        
-        .lob-logo {
-            width: 50px;
-            height: 50px;
-            opacity: 0.9;
-        }
-        
-        .week-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            animation: shimmer 3s infinite;
-        }
-        
-        @keyframes shimmer {
-            0% { left: -100%; }
-            100% { left: 100%; }
         }
         
         .week-title {
@@ -248,11 +226,7 @@
             font-size: 1.2rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
-        
-        .basketball-icon {
-            display: none;
-        }
-        
+
         @media print {
             body {
                 background: white;
@@ -312,7 +286,7 @@
     <div class="container">
         <div class="header">
             <h1 class="league-title">WLOB</h1>
-            <p class="season-subtitle">Season 4 Schedule</p>
+            <p class="season-subtitle">Season 5 Schedule</p>
         </div>
         <div style="text-align:center; margin-bottom: 2rem;">
             <label for="teamFilter" style="font-weight:600; font-size:1.1rem; margin-right:8px;">Filter by Team:</label>
@@ -324,6 +298,8 @@
 			<option value="Mavericks">Mavericks</option>
 			<option value="Omega">Omega</option>
 			<option value="Ronins">Ronins</option>
+			<option value="Dark Alley Ballerz">Dark Alley Ballerz</option>
+			<option value="Aces">Aces</option>
 			</select>
 			
           </div>
@@ -331,394 +307,71 @@
             <input type="checkbox" id="hideCompleted" style="margin-right:8px;">
             <label for="hideCompleted" style="font-weight:600; font-size:1.1rem;">Hide Completed Games</label>
           </div>
-          <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem">
-            <a href="https://www.instagram.com/w.leagueofbasketball/" target="_blank" 
-               style="text-decoration:none; margin-right: 20px;">
-                <button style="padding: 10px 20px; font-size: 1rem; font-weight: bold; background: #970eb3; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                    Follow Us on Instagram
-                </button>
-            </a>
-            <a href="https://www.youtube.com/@league.of.basketball" target="_blank" 
-               style="text-decoration:none;">
-                <button style="padding: 10px 20px; font-size: 1rem; font-weight: bold; background: #a30808; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                    Subscribe to our YouTube
-                </button>
-            </a>
-        </div>
-        <!-- Week 1 -->
-        <div class="week-section">
+          <!-- Week 1 -->
+          <div class="week-section">
             <div class="week-header">
                 <h2 class="week-title">Week 1</h2>
             </div>
             
             <div class="day-section">
                 <div class="day-header">
-                    <span class="day-name">Tuesday</span>
-                    <span class="day-date">July 15, 2025</span>
+                    <span class="day-name">Wednesday</span>
+                    <span class="day-date">November 5, 2025</span>
                 </div>
                 <div class="games-container">
-                    
                     <div class="game">
-                        <div class="game-time">8:00 PM</div>
+                        <div class="game-time">5:00 PM</div>
                         <div class="teams-container">
-                            <div class="team">23rd Street Ballerz</div>
+                            <div class="team">Dark Alley Ballerz</div>
                             <div class="vs-separator">VS</div>
-                            <div class="team">Mavericks</div>
+                            <div class="team">Aces</div>
                         </div>
-                        <div class="game-score">Final Score: 26 - 14</div>
                     </div>
                     <div class="game">
-                        <div class="game-time">9:15 PM</div>
+                        <div class="game-time">6:30 PM</div>
+                        <div class="teams-container">
+                            <div class="team">Omega</div>
+                            <div class="vs-separator">VS</div>
+                            <div class="team">Mambacitas</div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <div class="game-time">8:00 PM</div>
                         <div class="teams-container">
                             <div class="team">Inferno</div>
                             <div class="vs-separator">VS</div>
                             <div class="team">Ronins</div>
                         </div>
-                        <div class="game-score">Final Score: 49 - 9</div>
                     </div>
                 </div>
             </div>
             
             <div class="day-section">
                 <div class="day-header">
-                    <span class="day-name">Thursday</span>
-                    <span class="day-date">July 17, 2025</span>
+                    <span class="day-name">Friday</span>
+                    <span class="day-date">November 7, 2025</span>
                 </div>
                 <div class="games-container">
-                    
                     <div class="game">
-                        <div class="game-time">8:00 PM</div>
+                        <div class="game-time">5:00 PM</div>
                         <div class="teams-container">
-                            <div class="team">Mambacitas</div>
-                            <div class="vs-separator">VS</div>
                             <div class="team">Mavericks</div>
-                        </div>
-                        
-                        <div class="game-score">Final Score: 15 - 13</div>
-                    </div>
-                    <div class="game">
-                        <div class="game-time">9:15 PM</div>
-                        <div class="teams-container">
-                            <div class="team">Ronins</div>
                             <div class="vs-separator">VS</div>
-                            <div class="team">Omega</div>
+                            <div class="team">23rd Street Ballerz</div>
                         </div>
-                        
-                        <div class="game-score">Final Score: 10 - 49</div>
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
 
-        <!-- Week 2 -->
-        <div class="week-section">
+          <!-- Week 2 -->
+          <div class="week-section">
             <div class="week-header">
                 <h2 class="week-title">Week 2</h2>
             </div>
-            
-            <div class="day-section">
-                <div class="day-header">
-                    <span class="day-name">Tuesday</span>
-                    <span class="day-date">July 22, 2025</span>
-                </div>
-                <div class="games-container">
-                  
-                    <div class="game">
-                        <div class="game-time">8:00 PM</div>
-                        <div class="teams-container">
-                            <div class="team">Ronins</div>
-                            <div class="vs-separator">VS</div>
-                            <div class="team">23rd Street Ballerz</div>
-                        </div>
-                        
-                        <div class="game-score">Final Score: 16 - 33</div>
-                    </div>
-                    <div class="game">
-                        <div class="game-time">9:15 PM</div>
-                        <div class="teams-container">
-                            <div class="team">Omega</div>
-                            <div class="vs-separator">VS</div>
-                            <div class="team">Mavericks</div>
-                        </div>
-                        
-                        <div class="game-score">Final Score: 44 - 03</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="day-section">
-                <div class="day-header">
-                    <span class="day-name">Thursday</span>
-                    <span class="day-date">July 24, 2025</span>
-                </div>
-                <div class="games-container">
-                   
-                    <div class="game">
-                        <div class="game-time">8:00 PM</div>
-                        <div class="teams-container">
-                            <div class="team">Omega</div>
-                            <div class="vs-separator">VS</div>
-                            <div class="team">23rd Street Ballerz</div>
-                        </div>
-                        <div class="game-score">Final Score: 34 - 27</div>
-                    </div>
-                    <div class="game">
-                        <div class="game-time">9:15 PM</div>
-                        <div class="teams-container">
-                            <div class="team">Mambacitas</div>
-                            <div class="vs-separator">VS</div>
-                            <div class="team">Inferno</div>
-                        </div>
-                        <div class="game-score">Final Score: 24 - 52</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     
+            <!-- Repeat similar structure for other weeks here -->
 
-        <!-- Week 3 -->
-        <div class="week-section">
-            <div class="week-header">
-                <h2 class="week-title">Week 3</h2>
-            </div>
-            
-            <div class="day-section">
-                <div class="day-header">
-                    <span class="day-name">Tuesday</span>
-                    <span class="day-date">July 29, 2025</span>
-                </div>
-                <div class="games-container">
-                  
-                    <div class="game">
-                        <div class="game-time">8:00 PM</div>
-                        <div class="teams-container">
-                            <div class="team">Mavericks</div>
-                            <div class="vs-separator">VS</div>
-                            <div class="team">Inferno</div>
-                        </div>
-                    </div>
-                    <div class="game">
-                        <div class="game-time">9:15 PM</div>
-                        <div class="teams-container">
-                            <div class="team">Ronins</div>
-                            <div class="vs-separator">VS</div>
-                            <div class="team">Mambacitas</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="day-section">
-                <div class="day-header">
-                    <span class="day-name">Thursday</span>
-                    <span class="day-date">July 31, 2025</span>
-                </div>
-                <div class="games-container">
-                   
-                    <div class="game">
-                        <div class="game-time">8:00 PM</div>
-                        <div class="teams-container">
-                            <div class="team">Mambacitas</div>
-                            <div class="vs-separator">VS</div>
-                            <div class="team">Omega</div>
-                        </div>
-                    </div>
-                    <div class="game">
-                        <div class="game-time">9:15 PM</div>
-                        <div class="teams-container">
-                            <div class="team">Inferno</div>
-                            <div class="vs-separator">VS</div>
-                            <div class="team">23rd Street Ballerz</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-     
-        
-    
-	
-	<!-- Week 4 -->
-        <div class="week-section">
-            <div class="week-header">
-                <h2 class="week-title">Week 4</h2>
-            </div>
-            
-            <div class="day-section">
-            <div class="day-section">
-                <div class="day-header">
-                    <span class="day-name">Tuesday</span>
-                    <span class="day-date">August 5, 2025</span>
-                </div>
-                <div class="games-container">
-                  
-                    <div class="game">
-                        <div class="game-time">8:00 PM</div>
-                        <div class="teams-container">
-                            <div class="team">Mavericks</div>
-                            <div class="vs-separator">VS</div>
-                            <div class="team">Ronins</div>
-                        </div>
-                    </div>
-                    <div class="game">
-                        <div class="game-time">9:15 PM</div>
-                        <div class="teams-container">
-                            <div class="team">23rd Street Ballerz</div>
-                            <div class="vs-separator">VS</div>
-                            <div class="team">Mambacitas</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="day-section">
-                <div class="day-header">
-                    <span class="day-name">Thursday</span>
-                    <span class="day-date">August 7, 2025</span>
-                </div>
-                <div class="games-container">
-                   
-                    <div class="game">
-                        <div class="game-time">9:15 PM</div>
-                        <div class="teams-container">
-                            <div class="team">Inferno</div>
-                            <div class="vs-separator">VS</div>
-                            <div class="team">Omega</div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="day-section">
-                <div class="day-header">
-                    <span class="day-name">Saturday</span>
-                    <span class="day-date">August 9, 2025</span>
-                </div>
-                <div class="games-container">
-                   
-                    <div class="game">
-                        <div class="game-time">6:30</div>
-                        <div class="teams-container">
-                            <div class="team">Team Aisha</div>
-                            <div class="vs-separator">VS</div>
-                            <div class="team">Team Huraina</div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-     
-
-	<!-- Week 5 -->
-    <div class="week-section">
-        <div class="week-header">
-            <h2 class="week-title">PLAYOFFS</h2>
-        </div>
-        
-        <div class="day-section">
-        <div class="day-section">
-            <div class="day-header">
-                <span class="day-name">Tuesday - Semi Finals</span>
-                <span class="day-date">August 12, 2025</span>
-            </div>
-            <div class="games-container">
-              
-                <div class="game">
-                    <div class="game-time">8:00 PM</div>
-                    <div class="teams-container">
-                        <div class="team">23rd Street Ballerz</div>
-                        <div class="vs-separator">VS</div>
-                        <div class="team">Omega</div>
-                    </div>
-                </div>
-                <div class="game">
-                    <div class="game-time">9:15 PM</div>
-                    <div class="teams-container">
-                        <div class="team">Ronins</div>
-                        <div class="vs-separator">VS</div>
-                        <div class="team">Inferno</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="day-section">
-            <div class="day-header">
-                <span class="day-name">Friday - Final</span>
-                <span class="day-date">August 15, 2025</span>
-            </div>
-            <div class="games-container">
-               
-                <div class="game">
-                    <div class="game-time">8:00 PM</div>
-                    <div class="teams-container">
-                        <div class="team">Inferno</div>
-                        <div class="vs-separator">VS</div>
-                        <div class="team">Omega</div>
-                    </div>
-                    <div class="game-score">Final Score: 49-50. Omega are your champs :)</div>
-                </div>
-                
-            </div>
-        </div>
-    </div>        
-        
     </div>
-    <script>
-        const teamFilter = document.getElementById('teamFilter');
-        const hideCompletedCheckbox = document.getElementById('hideCompleted');
-        const games = document.querySelectorAll('.game');
-    
-        function updateGameVisibility() {
-            const selectedTeam = teamFilter.value.toLowerCase();
-            const hideCompleted = hideCompletedCheckbox.checked;
-            const now = new Date();
-    
-            games.forEach(game => {
-                const daySection = game.closest('.day-section');
-                const dateText = daySection.querySelector('.day-date').textContent.trim();
-                const timeText = game.querySelector('.game-time').textContent.trim();
-                const dateTime = new Date(`${dateText} ${timeText}`);
-    
-                const teams = Array.from(game.querySelectorAll('.team')).map(t => t.textContent.toLowerCase());
-    
-                let visible = true;
-    
-                // Filter by team
-                if (selectedTeam !== 'all' && !teams.includes(selectedTeam)) {
-                    visible = false;
-                }
-    
-                // Filter by completion
-                
-                if (hideCompleted && dateTime.setUTCHours(dateTime.getUTCHours()+2) < now) {
-                    visible = false;
-                }
-                
-    
-                game.style.display = visible ? '' : 'none';
-            });
-    
-            // Hide empty day sections
-            const daySections = document.querySelectorAll('.day-section');
-            daySections.forEach(daySection => {
-                const visibleGames = daySection.querySelectorAll('.game:not([style*="display: none"])');
-                daySection.style.display = visibleGames.length ? '' : 'none';
-            });
-    
-            // Hide empty week sections
-            const weekSections = document.querySelectorAll('.week-section');
-            weekSections.forEach(weekSection => {
-                const visibleDays = weekSection.querySelectorAll('.day-section:not([style*="display: none"])');
-                weekSection.style.display = visibleDays.length ? '' : 'none';
-            });
-        }
-    
-        teamFilter.addEventListener('change', updateGameVisibility);
-        hideCompletedCheckbox.addEventListener('change', updateGameVisibility);
-    </script>
-    
 </body>
 </html>
